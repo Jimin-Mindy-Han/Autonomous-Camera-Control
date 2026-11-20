@@ -1,0 +1,11 @@
+numpy
+opencv-python
+ultralytics
+deep-sort-realtime
+openai
+python-dotenv
+requests
+obs-websocket-py
+pandas
+pygame
+keyboard
