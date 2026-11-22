@@ -153,7 +153,7 @@ EDELKRONE_LINK_ID=your_edelkrone_link_id
 
 
 
-## 7. 실험 결과 및 논문
+## 7. 실험 결과
 
 | 시나리오 | 실험 내용 |
 | --- | --- |
@@ -162,5 +162,7 @@ EDELKRONE_LINK_ID=your_edelkrone_link_id
 | Script 3 | 평가 결과에 따른 재계획 및 재촬영 |
 
 논문에서 Script 3의 Target-in-frame ratio는 **0.63 → 1.00**, Mean center error는 **0.58 → 0.34**로 개선되었습니다.
+
+## 8. 논문
 
 Jimin Han, Young J. Kim, *Script-driven Autonomous Cinematography in Virtual Production using Vision Language Models*, Korea Computer Graphics Society, 32(3), 121–131, 2026. [DOI](https://doi.org/10.15701/kcgs.2026.32.3.121)
