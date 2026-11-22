@@ -1,6 +1,6 @@
 # Script-driven Autonomous Cinematography in Virtual Production
 
-촬영 대상 선택과 추적 → Edelkrone 카메라 로봇 제어 → 영상 녹화 → VLM 촬영 결과 평가 및 재계획 
+촬영 대상 탐지, 선택, 추적 → Edelkrone 카메라 로봇 제어 → 영상 녹화 → VLM 촬영 결과 평가 및 재계획 
 
 으로 이루어진 버추얼프로덕션에서의 각본 기반 촬영 자동화 시스템입니다.
 
