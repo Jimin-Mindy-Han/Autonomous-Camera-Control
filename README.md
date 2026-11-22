@@ -6,23 +6,7 @@
 
 ## System Overview
 
-```text
-Natural-language Script
-        ↓
-Shot Plan (subject / camera_movement)
-        ↓
-YOLO + DeepSORT → VLM Target Selection
-        ↓
-Tracking Result (Bounding Box / Track ID)
-        ↓
-Motion Control → Edelkrone Slider / Head
-        ↓
-OBS Recording + Tracking Log
-        ↓
-VLM Scene Description & Evaluation
-        ↓
-Pass: End / Fail: Revise Shot Plan → Retry
-```
+
 
 **main 파일:** `main_obs_recording.py`
 
