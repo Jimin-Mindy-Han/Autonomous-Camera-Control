@@ -4,9 +4,9 @@
 
 으로 이루어진 버추얼프로덕션에서의 각본 기반 촬영 자동화 시스템입니다.
 
-## System Overview
+## Pipeline
 
-
+![Autonomous Cinematography Pipeline](images/pipeline.png)
 
 **main 파일:** `main_obs_recording.py`
 
