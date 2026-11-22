@@ -1,6 +1,8 @@
 # Script-driven Autonomous Cinematography in Virtual Production
 
-Python 기반 촬영 자동화 시스템으로, 촬영 대상 선택과 추적, Edelkrone 카메라 이동, 영상 녹화, VLM 촬영 결과 평가 및 재계획을 연결했습니다. LED Wall 기반 버추얼 프로덕션 환경에서 실제 장비를 제어하여 촬영했습니다.
+촬영 대상 선택과 추적 → Edelkrone 카메라 로봇 제어 → 영상 녹화 → VLM 촬영 결과 평가 및 재계획 
+
+으로 이루어진 버추얼프로덕션에서의 각본 기반 촬영 자동화 시스템입니다.
 
 ## System Overview
 
