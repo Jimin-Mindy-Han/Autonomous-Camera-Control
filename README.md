@@ -24,7 +24,7 @@ VLM Scene Description & Evaluation
 Pass: End / Fail: Revise Shot Plan → Retry
 ```
 
-**주 실행 파일:** `main_obs_recording.py`
+**main 파일:** `main_obs_recording.py`
 
 초기 Shot Plan을 기반으로 촬영을 수행하고, 촬영 결과에 따라 `subject` 또는 `camera_movement`를 수정하는 재계획 루프를 실행합니다.
 
@@ -32,7 +32,7 @@ Pass: End / Fail: Revise Shot Plan → Retry
 
 YOLO로 프레임의 객체를 검출하고 DeepSORT로 Track ID를 유지합니다. 선택된 피사체의 Bounding Box를 이용하여 화면 중심과의 위치 오차를 계산합니다.
 
-**실제 코드 발췌 — `main_obs_recording.py`**
+**`main_obs_recording.py`**
 
 ```python
 frame_center_x = frame_width // 2
@@ -51,7 +51,7 @@ Python에서 Edelkrone 로컬 HTTP API(`127.0.0.1:32222/v1`)로 JSON 제어 명�
 
 ### Shot Plan에 따른 이동 명령
 
-**실제 코드 발췌 — `main_obs_recording.py`**
+**`main_obs_recording.py`**
 
 ```python
 pan_speed = 0.0
@@ -79,7 +79,7 @@ if result["status"] == "FOUND":
 
 ### HTTP API로 이동 명령 전송
 
-**실제 코드 발췌 — `camera_control/joystick_control.py`**
+**`camera_control/joystick_control.py`**
 
 ```python
 def joystickMoveSlide(linkID, slideSpeed):
@@ -112,7 +112,7 @@ def joystickMoveSlide(linkID, slideSpeed):
 
 녹화 영상에서 프레임을 추출하고 VLM으로 장면을 설명한 뒤 Visibility, Framing, Narrative Emphasis, Camera Movement 기준으로 결과를 평가합니다. 평가 결과를 바탕으로 Shot Plan을 수정하여 다시 촬영합니다.
 
-**실제 코드 발췌 — `main_obs_recording.py`**
+**`main_obs_recording.py`**
 
 ```python
 result_evaluation = erq.video_qa(
